@@ -25,9 +25,9 @@
 		"access": "public"
 	},
 	"devDependencies": {
-		"@ctx-core/fontawesome": "^10.2.63",
+		"@ctx-core/fontawesome": "^10.2.64",
 		"@ctx-core/html": "^6.1.63",
-		"@ctx-core/object": "^8.0.4",
+		"@ctx-core/object": "^8.0.5",
 		"svelte": "^3.20.1"
 	},
 	"gitHead": "739f5b0970fd4b5987422a0ad96e85b1cd0a44ae"
