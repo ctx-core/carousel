@@ -2,7 +2,6 @@
 	"name": "@ctx-core/carousel",
 	"version": "6.0.125",
 	"description": "ctx-core carousel",
-	"type": "module",
 	"main": "Carousel.html",
 	"module": "Carousel.html",
 	"scripts": {
