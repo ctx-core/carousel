@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/carousel",
-	"version": "6.0.127",
+	"version": "6.0.128",
 	"description": "ctx-core carousel",
 	"main": "Carousel.html",
 	"module": "Carousel.html",
@@ -25,9 +25,9 @@
 		"access": "public"
 	},
 	"devDependencies": {
-		"@ctx-core/fontawesome": "^10.2.81",
-		"@ctx-core/html": "^6.1.81",
-		"@ctx-core/object": "^8.0.14",
+		"@ctx-core/fontawesome": "^10.2.82",
+		"@ctx-core/html": "^6.1.82",
+		"@ctx-core/object": "^8.0.15",
 		"svelte": "^3.23.1"
 	},
 	"gitHead": "8937ac80882222c638877cacd99325e6d48a81bd"
