@@ -28,7 +28,7 @@
 		"@ctx-core/fontawesome": "^10.2.82",
 		"@ctx-core/html": "^6.1.83",
 		"@ctx-core/object": "^8.0.15",
-		"svelte": "^3.23.1"
+		"svelte": "^3.23.2"
 	},
 	"gitHead": "8937ac80882222c638877cacd99325e6d48a81bd"
 }
