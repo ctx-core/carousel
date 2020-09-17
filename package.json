@@ -1,35 +1,35 @@
 {
-	"name": "@ctx-core/carousel",
-	"version": "6.0.198",
-	"description": "ctx-core carousel",
-	"keywords": [
-		"ctx-core",
-		"carousel"
-	],
-	"homepage": "https://github.com/ctx-core/carousel#readme",
-	"bugs": {
-		"url": "https://github.com/ctx-core/carousel/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ctx-core/carousel.git"
-	},
-	"license": "Apache-2.0",
-	"author": "Brian Takita",
-	"main": "./index.js",
-	"module": "./index.js",
-	"types": "./index.ts",
-	"scripts": {
-		"exec": "$@"
-	},
-	"devDependencies": {
-		"@ctx-core/fontawesome": "workspace:*",
-		"@ctx-core/html": "workspace:*",
-		"@ctx-core/object": "workspace:*",
-		"svelte": "^3.25.0"
-	},
-	"publishConfig": {
-		"access": "public"
-	},
-	"gitHead": "8d70454cc6d2e65c9a5b6904bfb860c14f47a95a"
+  "name": "@ctx-core/carousel",
+  "version": "6.0.199",
+  "description": "ctx-core carousel",
+  "keywords": [
+    "ctx-core",
+    "carousel"
+  ],
+  "homepage": "https://github.com/ctx-core/carousel#readme",
+  "bugs": {
+    "url": "https://github.com/ctx-core/carousel/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctx-core/carousel.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Brian Takita",
+  "main": "./index.js",
+  "module": "./index.js",
+  "types": "./index.ts",
+  "scripts": {
+    "exec": "$@"
+  },
+  "devDependencies": {
+    "@ctx-core/fontawesome": "workspace:*",
+    "@ctx-core/html": "workspace:*",
+    "@ctx-core/object": "workspace:*",
+    "svelte": "~3.25.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "8d70454cc6d2e65c9a5b6904bfb860c14f47a95a"
 }
