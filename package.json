@@ -20,8 +20,8 @@
 	"module": "./index.js",
 	"types": "./index.ts",
 	"scripts": {
-		"exec": "$@",
-		"build": "npm run compile"
+		"build": "npm run compile",
+		"exec": "$@"
 	},
 	"devDependencies": {
 		"@ctx-core/fontawesome": "workspace:*",
