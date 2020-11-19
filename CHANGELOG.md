@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 6.0.214
+
+### Patch Changes
+
+- typescript: ^4.0.5 -> ^4.1.2
+
 ## 6.0.213
 
 ### Patch Changes
