@@ -1,1 +1,1 @@
-export * from './Carousel.svelte'
+export * from './Carousel'
