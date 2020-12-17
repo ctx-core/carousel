@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 7.0.0
+
+### Major Changes
+
+- Carousel: period**interval=>interval_period,is**touchstart=>is_touchstart,clientX\_\_mousedown=>mousedown_clientX,mousemove_clientX=>mousemove_clientX
+
 ## 6.0.219
 
 ### Patch Changes
