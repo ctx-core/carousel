@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 7.0.1
+
+### Patch Changes
+
+- - .rush
+
 ## 7.0.0
 
 ### Major Changes
