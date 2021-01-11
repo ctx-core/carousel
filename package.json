@@ -24,7 +24,7 @@
 		"exec": "$@"
 	},
 	"devDependencies": {
-		"@ctx-core/fontawesome": "workspace:^11.0.111",
+		"@ctx-core/fontawesome": "workspace:^11.0.112",
 		"@ctx-core/html": "workspace:^7.1.28",
 		"@ctx-core/object": "workspace:^16.0.3",
 		"svelte": "3.31.2",
