@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 8.0.0
+
+### Major Changes
+
+- src directory
+
 ## 7.0.5
 
 ### Patch Changes
