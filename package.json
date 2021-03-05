@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/carousel",
-	"version": "8.0.9",
+	"version": "8.0.10",
 	"description": "ctx-core carousel",
 	"keywords": [
 		"ctx-core",
@@ -24,11 +24,11 @@
 		"exec": "$@"
 	},
 	"devDependencies": {
-		"@ctx-core/fontawesome": "workspace:^12.0.39",
-		"@ctx-core/html": "workspace:^8.0.15",
-		"@ctx-core/object": "workspace:^17.3.0",
+		"@ctx-core/fontawesome": "workspace:^12.0.40",
+		"@ctx-core/html": "workspace:^8.0.16",
+		"@ctx-core/object": "workspace:^17.3.1",
 		"svelte": "3.35.0",
-		"typescript": "^4.2.2"
+		"typescript": "^4.2.3"
 	},
 	"publishConfig": {
 		"access": "public"
