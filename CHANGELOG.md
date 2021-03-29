@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 8.0.12
+
+### Patch Changes
+
+- version bump
+
 ## 8.0.11
 
 ### Patch Changes
