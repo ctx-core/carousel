@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 8.0.11
+
+### Patch Changes
+
+- fix: npm publish: https://github.com/npm/cli/issues/2834
+
 ## 8.0.10
 
 ### Patch Changes
