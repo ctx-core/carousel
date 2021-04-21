@@ -26,7 +26,7 @@
 	"devDependencies": {
 		"@ctx-core/fontawesome": "workspace:^12.0.57",
 		"@ctx-core/html": "workspace:^8.0.26",
-		"@ctx-core/object": "workspace:^17.5.6",
+		"@ctx-core/object": "workspace:^17.5.7",
 		"svelte": "3.37.0",
 		"typescript": "^4.2.4"
 	},
