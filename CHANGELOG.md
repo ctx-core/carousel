@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 8.1.1
+
+### Patch Changes
+
+- .gitignore: - \*.js
+
 ## 8.1.0
 
 ### Minor Changes
