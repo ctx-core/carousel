@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 8.1.0
+
+### Minor Changes
+
+- dist,types directory: addressing typescript build issues
+
 ## 8.0.40
 
 ### Patch Changes
