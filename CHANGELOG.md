@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 8.0.40
+
+### Patch Changes
+
+- types: ./src/index.d.ts: address error TS2742 issue
+
 ## 8.0.39
 
 ### Patch Changes
