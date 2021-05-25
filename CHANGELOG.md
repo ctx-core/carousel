@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 8.2.0
+
+### Minor Changes
+
+- fix tsc build directory issues
+
 ## 8.1.1
 
 ### Patch Changes
