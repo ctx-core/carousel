@@ -1,5 +1,12 @@
 # @ctx-core/carousel
 
+## 9.0.0
+
+### Major Changes
+
+- \$ suffix for stores
+- \_ suffix for factory functions
+
 ## 8.2.2
 
 ### Patch Changes

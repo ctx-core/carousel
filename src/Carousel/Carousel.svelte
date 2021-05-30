@@ -1,7 +1,7 @@
 <script>
 import { onMount, onDestroy } from 'svelte'
 import { assign } from '@ctx-core/object'
-import { _style } from '@ctx-core/html'
+import { style_ } from '@ctx-core/html'
 export let loading = true
 export let index = 0
 export let interval_period = 10000
@@ -20,8 +20,8 @@ $: items_node_height = items_node && parseFloat(getComputedStyle(items_node).hei
 $: Carousel_node_width && items_node_height && resize_items()
 let items_style//region
 $: items_style =
-	_style({
-		width: `${Carousel_node_width * _items_length()}px`,
+	style_({
+		width: `${Carousel_node_width * items_length_()}px`,
 		transition: updating ? `${transition_duration}ms ease-out` : 0,
 		transform: translateX ? `translate(${translateX}px)` : '',
 	})//endregion
@@ -39,20 +39,20 @@ onDestroy(clearInterval_background_image)
 		when transitioning from first to _last & _last to first slides.
 	Factory Functions fix the overflow glitch.
 */
-function _items_length() {
+function items_length_() {
 	return items_node && items_node.children.length
 }
-function _last_index() {
-	return _items_length() - 1
+function last_index_() {
+	return items_length_() - 1
 }
-function _previous_index() {
-	return index ? index - 1 : _last_index()
+function previous_index_() {
+	return index ? index - 1 : last_index_()
 }
-function _next_idx() {
-	return (index < _last_index()) ? index + 1 : 0
+function next_idx_() {
+	return (index < last_index_()) ? index + 1 : 0
 }
 function resize_items() {
-	for (let i = 0; i < _items_length(); i++) {
+	for (let i = 0; i < items_length_(); i++) {
 		const px__left = _left_px(i)
 		const item = items_node.children[i]
 		const style = {
@@ -68,13 +68,13 @@ function resize_items() {
 }
 function next() {
 	setTimeout(() => {
-		const index__transition = (index + 1) % _items_length()
+		const index__transition = (index + 1) % items_length_()
 		set_index(index__transition)
 	})
 }
 function prev() {
 	setTimeout(() => {
-		const length__items = _items_length()
+		const length__items = items_length_()
 		const index__transition = (length__items + index - 1) % length__items
 		set_index(index__transition)
 	})
@@ -172,9 +172,9 @@ function _left_px(i) {
 	return (
 		i == index
 		? 0
-		: i == _previous_index()
+		: i == previous_index_()
 			? -Carousel_node_width
-			: i == _next_idx()
+			: i == next_idx_()
 				? Carousel_node_width
 				: Carousel_node_width * (i - index)
 	)
