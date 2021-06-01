@@ -27,10 +27,10 @@
 		"exec": "$@"
 	},
 	"devDependencies": {
-		"@ctx-core/ctx-core-package-tools": "workspace:^7.0.3",
-		"@ctx-core/fontawesome": "workspace:^13.0.5",
+		"@ctx-core/ctx-core-package-tools": "workspace:^7.0.4",
+		"@ctx-core/fontawesome": "workspace:^13.0.6",
 		"@ctx-core/html": "workspace:^9.0.0",
-		"@ctx-core/object": "workspace:^19.0.2",
+		"@ctx-core/object": "workspace:^19.0.3",
 		"svelte": "3.38.2",
 		"typescript": "^4.3.2"
 	},
