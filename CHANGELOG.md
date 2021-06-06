@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 9.0.6
+
+### Patch Changes
+
+- fix: build: clean up old build files in dist
+
 ## 9.0.5
 
 ### Patch Changes
