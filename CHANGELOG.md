@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 9.0.7
+
+### Patch Changes
+
+- version bump: run build
+
 ## 9.0.6
 
 ### Patch Changes
