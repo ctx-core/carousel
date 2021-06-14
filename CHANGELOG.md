@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 9.0.13
+
+### Patch Changes
+
+- remove npm run symlink
+
 ## 9.0.12
 
 ### Patch Changes
