@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 9.0.18
+
+### Patch Changes
+
+- fix: npm run clean
+
 ## 9.0.17
 
 ### Patch Changes
