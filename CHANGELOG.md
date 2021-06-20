@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 9.0.19
+
+### Patch Changes
+
+- fix: deploying \*.js files
+
 ## 9.0.18
 
 ### Patch Changes
