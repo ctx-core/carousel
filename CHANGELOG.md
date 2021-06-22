@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 9.0.20
+
+### Patch Changes
+
+- "prepublishOnly": "npm run clean && npm run compile"
+
 ## 9.0.19
 
 ### Patch Changes
