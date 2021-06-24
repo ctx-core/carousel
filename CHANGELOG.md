@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 9.0.23
+
+### Patch Changes
+
+- tsconfig.json: "lib": ["dom", "ESNext"]
+
 ## 9.0.22
 
 ### Patch Changes
