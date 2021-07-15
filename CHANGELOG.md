@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 10.0.0
+
+### Major Changes
+
+- "type": "module": module npm type
+
 ## 9.0.52
 
 ### Patch Changes
