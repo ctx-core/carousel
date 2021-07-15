@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/carousel",
-	"version": "10.0.0",
+	"version": "10.0.1",
 	"description": "ctx-core carousel",
 	"keywords": [
 		"ctx-core",
@@ -16,7 +16,6 @@
 	},
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
-	"type": "module",
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
@@ -29,10 +28,10 @@
 		"prepublishOnly": "npm run build"
 	},
 	"devDependencies": {
-		"@ctx-core/ctx-core-package-tools": "workspace:^8.0.25",
-		"@ctx-core/fontawesome": "workspace:^15.0.0",
-		"@ctx-core/html": "workspace:^11.0.0",
-		"@ctx-core/object": "workspace:^21.0.0",
+		"@ctx-core/ctx-core-package-tools": "workspace:^8.0.26",
+		"@ctx-core/fontawesome": "workspace:^15.0.1",
+		"@ctx-core/html": "workspace:^11.0.1",
+		"@ctx-core/object": "workspace:^21.0.1",
 		"svelte": "3.38.3",
 		"typescript": "^4.3.5"
 	},

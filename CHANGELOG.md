@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 10.0.1
+
+### Patch Changes
+
+- 2a6971f80: fix: "type": "module"
+
 ## 10.0.0
 
 ### Major Changes
