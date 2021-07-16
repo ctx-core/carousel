@@ -1,5 +1,17 @@
 # @ctx-core/carousel
 
+## 10.0.18
+
+### Patch Changes
+
+- fix: sourceMappingURL: "mapRoot": ""
+
+## 10.0.17
+
+### Patch Changes
+
+- tsconfig.json: "target": "es2019"
+
 ## 10.0.16
 
 ### Patch Changes
