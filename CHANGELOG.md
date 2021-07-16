@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 10.0.14
+
+### Patch Changes
+
+- fix: cjs: load as a Promise
+
 ## 10.0.13
 
 ### Patch Changes
