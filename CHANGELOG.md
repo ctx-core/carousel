@@ -1,5 +1,23 @@
 # @ctx-core/carousel
 
+## 10.0.11
+
+### Patch Changes
+
+- back to esm module with cjs using esm npm package to load library
+
+## 10.0.10
+
+### Patch Changes
+
+- back to esm module with cjs using esm npm package to load library
+
+## 10.0.9
+
+### Patch Changes
+
+- back to esm module with cjs using esm npm package to load library
+
 ## 10.0.8
 
 ### Patch Changes
