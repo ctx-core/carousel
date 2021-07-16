@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 10.0.13
+
+### Patch Changes
+
+- "main": "./dist/index.cjs"
+
 ## 10.0.12
 
 ### Patch Changes
