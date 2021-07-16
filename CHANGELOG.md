@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 10.0.16
+
+### Patch Changes
+
+- - tsconfig.tsbuildinfo
+
 ## 10.0.15
 
 ### Patch Changes
