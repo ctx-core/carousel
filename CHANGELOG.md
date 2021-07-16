@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 10.0.12
+
+### Patch Changes
+
+- fix: index.cjs: module.exports = require('./index.js')
+
 ## 10.0.11
 
 ### Patch Changes
