@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 10.0.8
+
+### Patch Changes
+
+- support cjs & esm: + "exports"
+
 ## 10.0.7
 
 ### Patch Changes
