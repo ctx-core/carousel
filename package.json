@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/carousel",
-	"version": "10.0.20",
+	"version": "10.0.21",
 	"description": "ctx-core carousel",
 	"keywords": [
 		"ctx-core",
@@ -21,9 +21,11 @@
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"exports": {
-		"require": "./dist/index.cjs",
-		"import": "./dist/index.js",
-		"package.json": "./package.json"
+		".": {
+			"require": "./dist/index.cjs",
+			"import": "./dist/index.js"
+		},
+		"./package.json": "./package.json"
 	},
 	"scripts": {
 		"build": "npm run clean && npm run copy-mjs && npm run copy-components && npm run compile",
@@ -36,9 +38,9 @@
 	},
 	"devDependencies": {
 		"@ctx-core/ctx-core-package-tools": "workspace:^8.0.35",
-		"@ctx-core/fontawesome": "workspace:^15.0.17",
-		"@ctx-core/html": "workspace:^11.0.13",
-		"@ctx-core/object": "workspace:^21.0.11",
+		"@ctx-core/fontawesome": "workspace:^15.0.18",
+		"@ctx-core/html": "workspace:^11.0.14",
+		"@ctx-core/object": "workspace:^21.0.12",
 		"svelte": "3.38.3",
 		"typescript": "^4.3.5"
 	},
