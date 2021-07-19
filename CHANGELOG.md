@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 10.0.20
+
+### Patch Changes
+
+- exports: + "package.json": "./package.json"
+
 ## 10.0.19
 
 ### Patch Changes
