@@ -38,7 +38,7 @@
 	},
 	"devDependencies": {
 		"@ctx-core/ctx-core-package-tools": "workspace:^8.0.38",
-		"@ctx-core/fontawesome": "workspace:^15.0.21",
+		"@ctx-core/fontawesome": "workspace:^15.0.22",
 		"@ctx-core/html": "workspace:^11.0.14",
 		"@ctx-core/object": "workspace:^21.0.12",
 		"svelte": "3.40.1",
