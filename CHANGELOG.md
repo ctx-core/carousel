@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 11.0.1
+
+### Patch Changes
+
+- variable cleanup
+
 ## 11.0.0
 
 ### Major Changes

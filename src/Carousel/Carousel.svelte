@@ -36,7 +36,7 @@ onMount(() => {
 onDestroy(clearInterval_background_image)
 /*
 	Using reactive blocks results in a glitch
-		when transitioning from first to _last & _last to first slides.
+		when transitioning from first to last_index_ & last_index_ to first slides.
 	Factory Functions fix the overflow glitch.
 */
 function items_length_() {
@@ -53,12 +53,12 @@ function next_idx_() {
 }
 function resize_items() {
 	for (let i = 0; i < items_length_(); i++) {
-		const px__left = left_px_(i)
+		const left_px = left_px_(i)
 		const item = items_node.children[i]
 		const style = {
 			position: 'absolute',
 			top: 0,
-			left: `${px__left}px`,
+			left: `${left_px}px`,
 			height: `${items_node_height}px`,
 			width: `${Carousel_node_width}px`,
 			'z-index': 1,
@@ -154,15 +154,15 @@ function ontouchcancel_window(event) {
 function onmouseup_window(event:MouseEvent|Touch) {
 	if (!is_touchstart) return
 	const { clientX } = event
-	const clientX__diff = clientX - mousedown_clientX
+	const diff_clientX = clientX - mousedown_clientX
 	is_touchstart = false
 	mousedown_clientX = 0
 	mousemove_clientX = 0
-	if (clientX__diff > 0) {
-		translateX = clientX__diff
+	if (diff_clientX > 0) {
+		translateX = diff_clientX
 		prev()
-	} else if (clientX__diff < 0) {
-		translateX = clientX__diff
+	} else if (diff_clientX < 0) {
+		translateX = diff_clientX
 		next()
 	} else {
 		translateX = 0
@@ -196,9 +196,9 @@ function left_px_(i) {
 <div
 	bind:this={Carousel_node}
 	class="Carousel {$$props.class||''}"
-	class:loading="{loading}"
-	class:updating="{updating}"
-	class:is_touchstart="{is_touchstart}"
+	class:loading
+	class:updating
+	class:is_touchstart
 >
 	<div class="prev button" on:click={prev}>
 		<slot name="prev"></slot>
