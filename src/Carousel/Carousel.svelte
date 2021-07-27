@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 import { onMount, onDestroy } from 'svelte'
 import { assign } from '@ctx-core/object'
 import { style_ } from '@ctx-core/html'
@@ -8,9 +8,9 @@ export let interval_period = 10000
 export let transition_duration = 500
 export let translateX = 0
 export let is_touchstart = false
-export let mousedown_clientX = null
-export let mousemove_clientX = null
-export let updating = null
+export let mousedown_clientX:number = 0
+export let mousemove_clientX:number = 0
+export let updating:boolean = false
 let Carousel_node, background_image_interval, items_node
 let Carousel_node_width//region
 $: Carousel_node_width =
@@ -53,7 +53,7 @@ function next_idx_() {
 }
 function resize_items() {
 	for (let i = 0; i < items_length_(); i++) {
-		const px__left = _left_px(i)
+		const px__left = left_px_(i)
 		const item = items_node.children[i]
 		const style = {
 			position: 'absolute',
@@ -68,15 +68,15 @@ function resize_items() {
 }
 function next() {
 	setTimeout(() => {
-		const index__transition = (index + 1) % items_length_()
-		set_index(index__transition)
+		const transition_index = (index + 1) % items_length_()
+		set_index(transition_index)
 	})
 }
 function prev() {
 	setTimeout(() => {
-		const length__items = items_length_()
-		const index__transition = (length__items + index - 1) % length__items
-		set_index(index__transition)
+		const items_length = items_length_()
+		const transition_index = (items_length + index - 1) % items_length
+		set_index(transition_index)
 	})
 }
 function clearInterval_background_image() {
@@ -89,22 +89,22 @@ function setInterval_background_image() {
 	clearInterval_background_image()
 	background_image_interval = setInterval(
 		() => {
-			next(items_node)
+			next()
 		},
 		interval_period)
 }
-function set_index(index__transition) {
+function set_index(transition_index:number) {
 	clearInterval_background_image()
 	updating = true
 	setTimeout(() => {
-		translateX = -1 * _left_px(index__transition)
+		translateX = -1 * left_px_(transition_index)
 		setTimeout(() => {
 			if (!updating) {
 				return
 			}
 			updating = false
 			setTimeout(() => {
-				index = index__transition
+				index = transition_index
 				resize_items()
 				translateX = 0
 				setInterval_background_image()
@@ -112,11 +112,11 @@ function set_index(index__transition) {
 		}, transition_duration)
 	}, 100)
 }
-function onresize_window(event) {
+function onresize_window(_event:MouseEvent) {
 	Carousel_node = Carousel_node
 	items_node = items_node
 }
-function onmousedown_window(event) {
+function onmousedown_window(event:MouseEvent) {
 	const { top, left, width } = Carousel_node.getBoundingClientRect()
 	const { clientX, clientY } = event
 	const active =
@@ -130,7 +130,7 @@ function onmousedown_window(event) {
 		updating = false
 	}
 }
-function onmousemove_window(event) {
+function onmousemove_window(event:MouseEvent|Touch) {
 	if (!is_touchstart) return
 	const { clientX } = event
 	translateX = clientX - mousedown_clientX
@@ -139,25 +139,25 @@ function onmousemove_window(event) {
 function ontouchstart_window(event) {
 	onmousedown_window(event.changedTouches[0])
 }
-function ontouchmove_window(event) {
+function ontouchmove_window(event:TouchEvent) {
 	onmousemove_window(event.changedTouches[0])
 }
-function ontouchend_window(event) {
-	onmouseup_window(event.changedTouches[0], items_node)
+function ontouchend_window(event:TouchEvent) {
+	onmouseup_window(event.changedTouches[0])
 }
 function ontouchleave_window(event) {
-	onmouseup_window(event.changedTouches[0], items_node)
+	onmouseup_window(event.changedTouches[0])
 }
 function ontouchcancel_window(event) {
-	onmouseup_window(event.changedTouches[0], items_node)
+	onmouseup_window(event.changedTouches[0])
 }
-function onmouseup_window(event) {
+function onmouseup_window(event:MouseEvent|Touch) {
 	if (!is_touchstart) return
 	const { clientX } = event
 	const clientX__diff = clientX - mousedown_clientX
 	is_touchstart = false
-	mousedown_clientX = null
-	mousemove_clientX = null
+	mousedown_clientX = 0
+	mousemove_clientX = 0
 	if (clientX__diff > 0) {
 		translateX = clientX__diff
 		prev()
@@ -168,7 +168,7 @@ function onmouseup_window(event) {
 		translateX = 0
 	}
 }
-function _left_px(i) {
+function left_px_(i) {
 	return (
 		i == index
 		? 0
