@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 11.0.0
+
+### Major Changes
+
+- lang=ts
+
 ## 10.0.29
 
 ### Patch Changes
