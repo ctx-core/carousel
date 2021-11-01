@@ -1,5 +1,12 @@
 # @ctx-core/carousel
 
+## 11.0.53
+
+### Patch Changes
+
+- typescript: ^4.4.3 -> ^4.4.4
+- svelte: 3.43.1 -> 3.44.0
+
 ## 11.0.52
 
 ### Patch Changes
