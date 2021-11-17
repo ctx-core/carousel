@@ -1,7 +1,7 @@
 <script lang="ts">
 import { onMount, onDestroy } from 'svelte'
-import { assign } from '@ctx-core/object'
 import { style_ } from '@ctx-core/html'
+import { assign } from '@ctx-core/object'
 export let loading = true
 export let index = 0
 export let interval_period = 10000
@@ -11,23 +11,22 @@ export let is_touchstart = false
 export let mousedown_clientX:number = 0
 export let mousemove_clientX:number = 0
 export let updating:boolean = false
-let Carousel_node, background_image_interval, items_node
-let Carousel_node_width//region
-$: Carousel_node_width =
-	Carousel_node && parseFloat(getComputedStyle(Carousel_node).width)//endregion
-let items_node_height//region
+let Carousel_node:HTMLDivElement, background_image_interval:NodeJS.Timer|null, items_node:HTMLDivElement
+let Carousel_node_width:number//region
+$: Carousel_node_width = Carousel_node && parseFloat(getComputedStyle(Carousel_node).width)//endregion
+let items_node_height:number//region
 $: items_node_height = items_node && parseFloat(getComputedStyle(items_node).height)//endregion
 $: Carousel_node_width && items_node_height && resize_items()
-let items_style//region
+let items_style:string//region
 $: items_style =
 	style_({
 		width: `${Carousel_node_width * items_length_()}px`,
 		transition: updating ? `${transition_duration}ms ease-out` : 0,
 		transform: translateX ? `translate(${translateX}px)` : '',
 	})//endregion
-onMount(() => {
+onMount(()=>{
 	loading = true
-	setTimeout(() => {
+	setTimeout(()=>{
 		setInterval_background_image()
 		resize_items()
 		loading = false
@@ -39,22 +38,22 @@ onDestroy(clearInterval_background_image)
 		when transitioning from first to last_index_ & last_index_ to first slides.
 	Factory Functions fix the overflow glitch.
 */
-function items_length_() {
-	return items_node && items_node.children.length
+function items_length_():number|undefined {
+	return items_node?.children.length
 }
-function last_index_() {
+function last_index_():number {
 	return items_length_() - 1
 }
-function previous_index_() {
+function previous_index_():number {
 	return index ? index - 1 : last_index_()
 }
-function next_idx_() {
+function next_idx_():number {
 	return (index < last_index_()) ? index + 1 : 0
 }
-function resize_items() {
+function resize_items():void {
 	for (let i = 0; i < items_length_(); i++) {
 		const left_px = left_px_(i)
-		const item = items_node.children[i]
+		const item = items_node.children[i] as HTMLElement
 		const style = {
 			position: 'absolute',
 			top: 0,
@@ -66,44 +65,40 @@ function resize_items() {
 		assign(item.style, style)
 	}
 }
-function next() {
-	setTimeout(() => {
+function next():void {
+	setTimeout(()=>{
 		const transition_index = (index + 1) % items_length_()
 		set_index(transition_index)
 	})
 }
-function prev() {
-	setTimeout(() => {
+function prev():void {
+	setTimeout(()=>{
 		const items_length = items_length_()
 		const transition_index = (items_length + index - 1) % items_length
 		set_index(transition_index)
 	})
 }
-function clearInterval_background_image() {
+function clearInterval_background_image():void {
 	if (background_image_interval) {
 		clearInterval(background_image_interval)
 	}
 	background_image_interval = null
 }
-function setInterval_background_image() {
+function setInterval_background_image():void {
 	clearInterval_background_image()
-	background_image_interval = setInterval(
-		() => {
-			next()
-		},
-		interval_period)
+	background_image_interval = setInterval(()=>next(), interval_period)
 }
-function set_index(transition_index:number) {
+function set_index(transition_index:number):void {
 	clearInterval_background_image()
 	updating = true
-	setTimeout(() => {
+	setTimeout(()=>{
 		translateX = -1 * left_px_(transition_index)
-		setTimeout(() => {
+		setTimeout(()=>{
 			if (!updating) {
 				return
 			}
 			updating = false
-			setTimeout(() => {
+			setTimeout(()=>{
 				index = transition_index
 				resize_items()
 				translateX = 0
@@ -112,11 +107,11 @@ function set_index(transition_index:number) {
 		}, transition_duration)
 	}, 100)
 }
-function onresize_window(_event:MouseEvent) {
+function onresize_window(_event:MouseEvent):void {
 	Carousel_node = Carousel_node
 	items_node = items_node
 }
-function onmousedown_window(event:MouseEvent) {
+function onmousedown_window(event:MouseEvent):void {
 	const { top, left, width } = Carousel_node.getBoundingClientRect()
 	const { clientX, clientY } = event
 	const active =
@@ -130,28 +125,28 @@ function onmousedown_window(event:MouseEvent) {
 		updating = false
 	}
 }
-function onmousemove_window(event:MouseEvent|Touch) {
+function onmousemove_window(event:MouseEvent|Touch):void {
 	if (!is_touchstart) return
 	const { clientX } = event
 	translateX = clientX - mousedown_clientX
 	mousemove_clientX = clientX
 }
-function ontouchstart_window(event) {
+function ontouchstart_window(event):void {
 	onmousedown_window(event.changedTouches[0])
 }
-function ontouchmove_window(event:TouchEvent) {
+function ontouchmove_window(event:TouchEvent):void {
 	onmousemove_window(event.changedTouches[0])
 }
-function ontouchend_window(event:TouchEvent) {
+function ontouchend_window(event:TouchEvent):void {
 	onmouseup_window(event.changedTouches[0])
 }
-function ontouchleave_window(event) {
+function ontouchleave_window(event):void {
 	onmouseup_window(event.changedTouches[0])
 }
-function ontouchcancel_window(event) {
+function ontouchcancel_window(event):void {
 	onmouseup_window(event.changedTouches[0])
 }
-function onmouseup_window(event:MouseEvent|Touch) {
+function onmouseup_window(event:MouseEvent|Touch):void {
 	if (!is_touchstart) return
 	const { clientX } = event
 	const diff_clientX = clientX - mousedown_clientX
@@ -168,7 +163,7 @@ function onmouseup_window(event:MouseEvent|Touch) {
 		translateX = 0
 	}
 }
-function left_px_(i) {
+function left_px_(i):number {
 	return (
 		i == index
 		? 0
