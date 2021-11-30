@@ -1,5 +1,33 @@
 # @ctx-core/carousel
 
+## 11.0.59
+
+### Patch Changes
+
+- @swc/cli: ^0.1.51 -> ^0.1.52
+- @swc/core: ^1.2.111 -> ^1.2.113
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/ctx-core-package-tools@8.0.80
+  - @ctx-core/fontawesome@15.1.5
+  - @ctx-core/html@11.0.23
+  - @ctx-core/object@21.0.26
+
+## 11.0.58
+
+### Patch Changes
+
+- svelte: 3.44.1 -> 3.44.2
+- @swc/core: ^1.2.110 -> ^1.2.111
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/ctx-core-package-tools@8.0.79
+  - @ctx-core/fontawesome@15.1.4
+  - @ctx-core/html@11.0.22
+  - @ctx-core/object@21.0.25
+
 ## 11.0.57
 
 ### Patch Changes
