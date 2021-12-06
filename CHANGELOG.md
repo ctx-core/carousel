@@ -1,5 +1,14 @@
 # @ctx-core/carousel
 
+## 11.0.64
+
+### Patch Changes
+
+- package.json: - "main": explicitly not support cjs
+- Updated dependencies
+  - @ctx-core/fontawesome@15.1.12
+  - @ctx-core/html@11.0.28
+
 ## 11.0.63
 
 ### Patch Changes
