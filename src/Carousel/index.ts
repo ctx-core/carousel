@@ -1,3 +1,2 @@
 import 'svelte'
-import Carousel from './Carousel.svelte'
-export { Carousel }
+export * as Carousel from './Carousel.svelte'
