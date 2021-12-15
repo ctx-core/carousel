@@ -1,5 +1,17 @@
 # @ctx-core/carousel
 
+## 11.0.70
+
+### Patch Changes
+
+- package.json: svelte: ./dist/index.js
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/ctx-core-package-tools@8.0.88
+  - @ctx-core/fontawesome@16.0.2
+  - @ctx-core/html@11.0.30
+  - @ctx-core/object@22.0.1
+
 ## 11.0.69
 
 ### Patch Changes
