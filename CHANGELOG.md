@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 11.0.69
+
+### Patch Changes
+
+- update dependencies
+
 ## 11.0.68
 
 ### Patch Changes

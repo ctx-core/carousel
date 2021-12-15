@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/carousel",
-	"version": "11.0.68",
+	"version": "11.0.69",
 	"description": "ctx-core carousel",
 	"keywords": [
 		"ctx-core",
@@ -33,7 +33,7 @@
 	},
 	"dependencies": {
 		"@ctx-core/ctx-core-package-tools": "workspace:^8.0.87",
-		"@ctx-core/fontawesome": "workspace:^16.0.0",
+		"@ctx-core/fontawesome": "workspace:^16.0.1",
 		"@ctx-core/html": "workspace:^11.0.29",
 		"@ctx-core/object": "workspace:^22.0.0"
 	},
