@@ -1,5 +1,16 @@
 # @ctx-core/carousel
 
+## 11.0.72
+
+### Patch Changes
+
+- fix: tsconfig.json: "rootDir": "."
+- Updated dependencies
+  - @ctx-core/fontawesome@16.0.4
+  - @ctx-core/html@11.0.32
+  - @ctx-core/object@22.0.3
+  - @ctx-core/ctx-core-package-tools@8.0.90
+
 ## 11.0.71
 
 ### Patch Changes
