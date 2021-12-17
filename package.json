@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/carousel",
-	"version": "11.0.76",
+	"version": "11.0.77",
 	"description": "ctx-core carousel",
 	"keywords": [
 		"ctx-core",
@@ -17,7 +17,7 @@
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
 	"type": "module",
-	"types": "./src/index.ts",
+	"types": "./dist/index.d.ts",
 	"exports": {
 		".": {
 			"import": "./dist/index.js"
@@ -35,10 +35,10 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/ctx-core-package-tools": "workspace:^8.0.94",
-		"@ctx-core/fontawesome": "workspace:^16.0.8",
-		"@ctx-core/html": "workspace:^11.0.36",
-		"@ctx-core/object": "workspace:^22.0.7"
+		"@ctx-core/ctx-core-package-tools": "workspace:^8.0.95",
+		"@ctx-core/fontawesome": "workspace:^16.0.9",
+		"@ctx-core/html": "workspace:^11.0.37",
+		"@ctx-core/object": "workspace:^22.0.8"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",

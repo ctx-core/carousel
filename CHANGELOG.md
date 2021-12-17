@@ -1,5 +1,16 @@
 # @ctx-core/carousel
 
+## 11.0.77
+
+### Patch Changes
+
+- fix: error TS6059: \* is not under 'rootDir': package.json: types: ./dist/index.d.ts
+- Updated dependencies
+  - @ctx-core/fontawesome@16.0.9
+  - @ctx-core/html@11.0.37
+  - @ctx-core/object@22.0.8
+  - @ctx-core/ctx-core-package-tools@8.0.95
+
 ## 11.0.76
 
 ### Patch Changes
