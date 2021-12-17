@@ -1,5 +1,16 @@
 # @ctx-core/carousel
 
+## 11.0.76
+
+### Patch Changes
+
+- tsconfig.json: "target": "ES2021"
+- Updated dependencies
+  - @ctx-core/fontawesome@16.0.8
+  - @ctx-core/html@11.0.36
+  - @ctx-core/object@22.0.7
+  - @ctx-core/ctx-core-package-tools@8.0.94
+
 ## 11.0.75
 
 ### Patch Changes
