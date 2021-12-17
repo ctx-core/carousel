@@ -1,5 +1,16 @@
 # @ctx-core/carousel
 
+## 11.0.75
+
+### Patch Changes
+
+- package.json: "types": "./src/index.ts": better editing experience
+- Updated dependencies
+  - @ctx-core/fontawesome@16.0.7
+  - @ctx-core/html@11.0.35
+  - @ctx-core/object@22.0.6
+  - @ctx-core/ctx-core-package-tools@8.0.93
+
 ## 11.0.74
 
 ### Patch Changes
