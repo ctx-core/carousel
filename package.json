@@ -35,7 +35,6 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/ctx-core-package-tools": "workspace:^8.0.97",
 		"@ctx-core/fontawesome": "workspace:^16.0.10",
 		"@ctx-core/html": "workspace:^11.0.37",
 		"@ctx-core/object": "workspace:^22.0.8"
