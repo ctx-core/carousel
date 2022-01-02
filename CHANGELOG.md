@@ -1,5 +1,14 @@
 # @ctx-core/carousel
 
+## 11.0.78
+
+### Patch Changes
+
+- .js + .d.ts instead of .ts
+- Updated dependencies
+  - @ctx-core/fontawesome@16.0.11
+  - @ctx-core/html@11.0.38
+
 ## 11.0.77
 
 ### Patch Changes
