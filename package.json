@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/carousel",
-	"version": "11.0.78",
+	"version": "11.0.79",
 	"description": "ctx-core carousel",
 	"keywords": [
 		"ctx-core",
@@ -35,9 +35,9 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/fontawesome": "workspace:^16.0.11",
-		"@ctx-core/html": "workspace:^11.0.38",
-		"@ctx-core/object": "workspace:^22.0.9"
+		"@ctx-core/fontawesome": "workspace:^16.0.12",
+		"@ctx-core/html": "workspace:^11.0.39",
+		"@ctx-core/object": "workspace:^22.0.10"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
