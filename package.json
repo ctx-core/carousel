@@ -35,9 +35,9 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/fontawesome": "workspace:^16.0.18",
-		"@ctx-core/html": "workspace:^11.0.42",
-		"@ctx-core/object": "workspace:*"
+		"@ctx-core/fontawesome": "^16.0.18",
+		"@ctx-core/html": "^11.0.42",
+		"@ctx-core/object": "*"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
