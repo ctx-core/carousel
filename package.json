@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/carousel",
-	"version": "11.0.88",
+	"version": "11.0.89",
 	"description": "ctx-core carousel",
 	"keywords": [
 		"ctx-core",
@@ -19,9 +19,7 @@
 	"type": "module",
 	"types": "./lib/index.d.ts",
 	"exports": {
-		".": {
-			"import": "./lib/index.js"
-		},
+		".": "./lib/index.js",
 		"./package.json": "./package.json"
 	},
 	"scripts": {
@@ -35,9 +33,9 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/fontawesome": "^16.0.21",
-		"@ctx-core/html": "^11.0.43",
-		"@ctx-core/object": "^22.1.3"
+		"@ctx-core/fontawesome": "workspace:^16.0.22",
+		"@ctx-core/html": "workspace:^11.0.44",
+		"@ctx-core/object": "workspace:^22.1.4"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",

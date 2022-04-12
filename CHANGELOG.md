@@ -1,5 +1,15 @@
 # @ctx-core/carousel
 
+## 11.0.89
+
+### Patch Changes
+
+- package.json: exports: update
+- Updated dependencies
+  - @ctx-core/fontawesome@16.0.22
+  - @ctx-core/html@11.0.44
+  - @ctx-core/object@22.1.4
+
 ## 11.0.88
 
 ### Patch Changes
