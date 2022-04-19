@@ -35,7 +35,7 @@
 	"dependencies": {
 		"@ctx-core/fontawesome": "^16.0.23",
 		"@ctx-core/html": "^11.0.45",
-		"@ctx-core/object": "^22.1.5"
+		"@ctx-core/object": "^22.1.6"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
