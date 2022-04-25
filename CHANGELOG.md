@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 11.0.91
+
+### Patch Changes
+
+- tslib: ^2.3.1 -> ^2.4.0
+
 ## 11.0.90
 
 ### Patch Changes
