@@ -1,5 +1,15 @@
 # @ctx-core/carousel
 
+## 11.0.92
+
+### Patch Changes
+
+- @ctx-core/array: 26.2.0
+- Updated dependencies
+  - @ctx-core/fontawesome@16.0.24
+  - @ctx-core/html@11.0.46
+  - @ctx-core/object@22.1.7
+
 ## 11.0.91
 
 ### Patch Changes
