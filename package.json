@@ -35,13 +35,13 @@
 	"dependencies": {
 		"@ctx-core/fontawesome": "^16.0.30",
 		"@ctx-core/html": "^11.0.50",
-		"@ctx-core/object": "^22.2.0"
+		"@ctx-core/object": "^22.2.1"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"@swc/cli": "^0.1.57",
-		"@swc/core": "^1.2.194",
+		"@swc/core": "^1.2.196",
 		"rimraf": "^3.0.2",
 		"svelte": "^3.48.0",
 		"svelte-preprocess": "^4.10.6",
