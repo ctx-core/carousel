@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/carousel",
-	"version": "11.0.121",
+	"version": "11.0.122",
 	"description": "ctx-core carousel",
 	"keywords": [
 		"ctx-core",
@@ -33,7 +33,7 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/fontawesome": "^16.0.34",
+		"@ctx-core/fontawesome": "^16.0.35",
 		"@ctx-core/html": "^11.0.50",
 		"@ctx-core/object": "^22.4.1"
 	},
