@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/carousel",
-	"version": "11.0.122",
+	"version": "11.0.123",
 	"description": "ctx-core carousel",
 	"keywords": [
 		"ctx-core",
@@ -34,8 +34,8 @@
 	},
 	"dependencies": {
 		"@ctx-core/fontawesome": "^16.0.35",
-		"@ctx-core/html": "^11.0.50",
-		"@ctx-core/object": "^22.4.1"
+		"@ctx-core/html": "^11.0.51",
+		"@ctx-core/object": "^22.5.0"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
