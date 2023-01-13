@@ -1,5 +1,14 @@
 # @ctx-core/carousel
 
+## 11.0.144
+
+### Patch Changes
+
+- rimraf: ^3.0.2 -> ^4.0.1
+- Updated dependencies
+  - @ctx-core/fontawesome@16.0.47
+  - @ctx-core/html@11.0.61
+
 ## 11.0.143
 
 ### Patch Changes
