@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 11.0.146
+
+### Patch Changes
+
+- svelte-preprocess: ^5.0.0 -> ^5.0.1
+
 ## 11.0.145
 
 ### Patch Changes
