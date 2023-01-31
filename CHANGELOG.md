@@ -1,5 +1,15 @@
 # @ctx-core/carousel
 
+## 11.0.154
+
+### Patch Changes
+
+- tsconfig.json: - importsNotUsedAsValues
+- Updated dependencies
+  - @ctx-core/fontawesome@16.0.53
+  - @ctx-core/html@11.0.65
+  - @ctx-core/object@24.1.1
+
 ## 11.0.153
 
 ### Patch Changes
