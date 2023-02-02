@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/carousel",
-	"version": "11.0.159",
+	"version": "11.0.160",
 	"description": "ctx-core carousel",
 	"keywords": [
 		"ctx-core",
@@ -45,7 +45,7 @@
 		"rimraf": "^4.1.2",
 		"svelte": "^3.55.1",
 		"svelte-preprocess": "^5.0.1",
-		"svelte2tsx": "^0.6.0",
+		"svelte2tsx": "^0.6.1",
 		"tslib": "^2.5.0",
 		"typescript": "next"
 	},
