@@ -1,5 +1,16 @@
 # @ctx-core/carousel
 
+## 11.1.199
+
+### Patch Changes
+
+- tsx: ^3.13.0 -> ^3.14.0
+- svelte: ^4.2.1 -> ^4.2.2
+- Updated dependencies
+  - @ctx-core/fontawesome@16.1.136
+  - @ctx-core/html@11.5.1
+  - @ctx-core/object@28.2.1
+
 ## 11.1.198
 
 ### Patch Changes
