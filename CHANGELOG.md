@@ -1,5 +1,15 @@
 # @ctx-core/carousel
 
+## 11.1.206
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/object@29.0.0
+  - @ctx-core/html@11.5.3
+
 ## 11.1.205
 
 ### Patch Changes
