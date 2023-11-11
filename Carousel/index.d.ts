@@ -1,5 +1,5 @@
-import type { SvelteComponentTyped } from 'svelte'
-export class Carousel extends SvelteComponentTyped<{
+import type { SvelteComponent } from 'svelte'
+export class Carousel extends SvelteComponent<{
 	loading?:boolean
 	index?:number
 	interval_period?:number
