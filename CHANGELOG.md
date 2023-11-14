@@ -1,5 +1,15 @@
 # @ctx-core/carousel
 
+## 11.2.3
+
+### Patch Changes
+
+- package.json: files: + \*.js
+- Updated dependencies
+  - @ctx-core/fontawesome@16.2.3
+  - @ctx-core/html@11.6.3
+  - @ctx-core/object@30.1.3
+
 ## 11.2.2
 
 ### Patch Changes
