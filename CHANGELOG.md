@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 11.2.60
+
+### Patch Changes
+
+- svelte: ^4.2.7 -> ^4.2.8
+
 ## 11.2.59
 
 ### Patch Changes
