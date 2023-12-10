@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 11.2.82
+
+### Patch Changes
+
+- @ctx-core/fontawesome: ^16.2.46 -> ^16.2.47
+
 ## 11.2.81
 
 ### Patch Changes
