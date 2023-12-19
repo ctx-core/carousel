@@ -1,7 +1,6 @@
-<script>
+<script lang="ts">
+import { html_style_ } from 'ctx-core/html'
 import { onMount, onDestroy } from 'svelte'
-import { style_ } from '@ctx-core/html'
-import { assign } from '@ctx-core/object'
 export let loading = true
 export let index = 0
 export let interval_period = 10000
@@ -22,7 +21,7 @@ $: Carousel_node_width && items_node_height && resize_items()
 /** @type {string} */
 let items_style//region
 $: items_style =
-	style_({
+	html_style_({
 		width: `${Carousel_node_width * items_length_()}px`,
 		transition: updating ? `${transition_duration}ms ease-out` : 0,
 		transform: translateX ? `translate(${translateX}px)` : '',
@@ -65,7 +64,7 @@ function resize_items() {
 			width: `${Carousel_node_width}px`,
 			'z-index': 1,
 		}
-		assign(item.style, style)
+		Object.assign(item.style, style)
 	}
 }
 function next() {
