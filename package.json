@@ -39,8 +39,8 @@
 		"test:unit:coverage": "c8 pnpm test:unit"
 	},
 	"dependencies": {
-		"@ctx-core/fontawesome": "^16.2.120",
-		"ctx-core": "^5.27.0",
+		"@ctx-core/fontawesome": "^16.2.121",
+		"ctx-core": "^5.27.1",
 		"svelte": "^4.2.9"
 	},
 	"devDependencies": {
