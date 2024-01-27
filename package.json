@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/carousel",
-	"version": "11.2.231",
+	"version": "11.2.232",
 	"description": "ctx-core carousel",
 	"keywords": [
 		"ctx-core",
@@ -40,7 +40,7 @@
 	},
 	"dependencies": {
 		"@ctx-core/fontawesome": "^16.2.130",
-		"ctx-core": "^5.31.1",
+		"ctx-core": "^5.31.2",
 		"svelte": "^4.2.9"
 	},
 	"devDependencies": {
