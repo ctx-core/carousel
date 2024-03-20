@@ -1,5 +1,14 @@
 # @ctx-core/carousel
 
+## 11.2.322
+
+### Patch Changes
+
+- package.json: author: url,email
+- Updated dependencies
+  - ctx-core@6.6.1
+  - @ctx-core/fontawesome@16.2.180
+
 ## 11.2.321
 
 ### Patch Changes
