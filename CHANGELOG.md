@@ -1,5 +1,11 @@
 # @ctx-core/carousel
 
+## 11.2.418
+
+### Patch Changes
+
+- ctx-core: ^7.2.20 -> ^7.2.21
+
 ## 11.2.417
 
 ### Patch Changes
