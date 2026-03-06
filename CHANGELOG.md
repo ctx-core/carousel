@@ -1,5 +1,14 @@
 # @ctx-core/carousel
 
+## 11.2.445
+
+### Patch Changes
+
+- chore: migrate scripts from pnpm to bun
+- Updated dependencies
+  - ctx-core@7.2.34
+  - @ctx-core/fontawesome@16.2.254
+
 ## 11.2.444
 
 ### Patch Changes
